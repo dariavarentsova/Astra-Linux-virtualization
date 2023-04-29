@@ -13,7 +13,7 @@ sudo salt $minion cmd.run 'sudo rm -rf /tmp/nginx_archive.tar.gz'
 sudo salt $minion cmd.run 'sudo apt install nginx'
 
 # Разрешаем трафик на порту 80.
-sudo salt $minion cmd.run 'sudo ufw allow "Nginx HTTP'
+sudo salt $minion cmd.run 'sudo ufw allow "Nginx HTTP"'
 
 # Запускаем веб-сервер
 sudo salt $minion cmd.run 'sudo systemctl start nginx'
